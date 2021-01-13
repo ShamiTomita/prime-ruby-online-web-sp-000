@@ -1,9 +1,7 @@
  def prime?(n)
   for d in 2..(n - 1)
-   if (n % d) == 0
+   if (n % d) == 0 || n == -1
      return false 
-  elsif (n) == -1
-    return false
    end
   end
   true
