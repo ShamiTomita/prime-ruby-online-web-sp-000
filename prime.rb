@@ -1,15 +1,13 @@
- def prime?(x)
-  if x == 1
-    return true 
-  elsif x < 1
-    return false
+def prime?(number)
+  divisors = *(2..number - 1)
+  remainders = []
+  divisors.each do |divisor|
+    remainder = number % divisor
+    remainders << remainder
+end
+  if number > 1 then remainders. all? {|remainder| remainder != 0}
   else
-  for y in 2..(x-1)
-    if (x % y) == 0
-      return false 
-    end
-  end 
-end
-
-  true
-end
+    false
+  end
+  end
+  
